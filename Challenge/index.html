@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        
+  <link rel="icon" 
+     type="image/png" 
+     href="http://example.com/myicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style="background-image: url(https://pbs.twimg.com/media/E772awfWYAA6-DS?format=jpg&name=4096x4096)";>
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"></a></li>
+            <li><a href="#">bar</a></li>
+            <li><a href="#">bubble</a></li>
+            <li><a href="#">gauge</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="row">
+            <p>Thank you for participating in the belly button study with Improbable Beef. To see how your belly button bacteria compare to those of other volunteers select your ID from the dropdown below. Does your belly button have the right stuff? Because of the data you provided, if we identify a bacteria species as a candidate to manufacture synthetic beef, you'll be able to see if your navel has it!</p>
+        </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div id="bar"></div>
+        <p>Select your ID to see the top 10 bacterial species in your belly button.</p>
+      </div>
+      <div class="col-md-5">
+        <div id= "gauge"></div>
+        <p>Select your ID to see how your bathing frequency affects your belly button biodiversity.</p>
+      </div>
+      <div class="col-md-5">
+        <div id="bubble"></div>
+        <p>Select your ID into to see how many cultures we taken in your sample.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+  
+
+</body>
+
+</html>
